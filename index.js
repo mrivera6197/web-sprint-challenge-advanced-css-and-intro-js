@@ -349,9 +349,7 @@ In HTML, every artist and associated content uses the following structure:
 </div>
 
 Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
-
 The function should console.log 50 chunks of HTML code that match the structure above. 
-
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
 function getHTML(/* Code here */){
@@ -363,11 +361,18 @@ function getHTML(/* Code here */){
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(array){
 
-    /* Code here */
-
+    for (let i = array.length - 1; i > 0; i--){
+      const random = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[random];
+      array[random] = temp;
+    }
+    return array;
   }
+
+  console.log(randomize(artists));
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
