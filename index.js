@@ -208,8 +208,8 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-// console.log(artists[0].name);
-// console.log(artists[2].bio);
+console.log(artists[0].name);
+console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
@@ -241,7 +241,7 @@ function getArtistByIndex(array, index) {
   return `The artist at index ${index} is ${array[index].name}`
   }
 
-  // console.log(getArtistByIndex(artists, 0));
+  console.log(getArtistByIndex(artists, 0));
   
   /**
 
@@ -258,7 +258,7 @@ function get20s(array){
   }
   return twenties;
 }
-// console.log(get20s(artists));
+console.log(get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -277,7 +277,7 @@ function removeArtist(array, index) {
     return array;
   }
 
-  // console.log(removeArtist(artists, 0));
+  console.log(removeArtist(artists, 0));
   
 
 /**
@@ -309,7 +309,7 @@ function addArtist(array, object){
     bio: "thanks for reviewing my sprint!"
   }
 
-  // console.log(addArtist(artists, myInfo));
+  console.log(addArtist(artists, myInfo));
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -328,7 +328,7 @@ function lotsOfArt(array){
   }
   return newArray;
 }
-// console.log(lotsOfArt(artists));
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
