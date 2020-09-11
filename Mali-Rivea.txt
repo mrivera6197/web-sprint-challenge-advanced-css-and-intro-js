@@ -1,0 +1,18 @@
+How would you describe acessibility on the web to someone new to programming?
+
+ it is important to design websites that are accessible to everyone i.e those with auditory, cognitive, neurological or physical disabilites, and/pr visual needs.  
+
+
+Talk about 3 different things you can do to ensure your website is accessible.
+
+- use responsive units (rems, percentages) to ensure the font-size imgs will increase in size on a zoom in screen 
+- use semantic HTML for screen readers to outline the page well
+- use alt tags for images to describe what is in the image for those who may not be able to see 
+
+How would you explain the concept of a variable to someone new to programming?
+
+- a variable is stores information, its value is assigned to it 
+
+What is the purpose of using functions in code?
+
+-functions are used to solve problems in code. functions accept parameters and conditions to work through data and return a value of interest

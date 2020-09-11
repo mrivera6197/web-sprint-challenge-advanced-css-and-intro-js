@@ -14,12 +14,15 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+/* border: 0;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+*{
+    /* border: 1px solid red; */
+}
 html{
     font-size:62.5%;
 }
@@ -133,4 +136,55 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/*Styles for phone at 500px*/ 
+
+@media (max-width: 500px){
+
+    /*Header styles*/
+
+    body {
+        background: yellow;
+    }
+
+    nav a {
+        margin: 0 3%;
+    }
+
+    nav span{
+        border-left:2px solid #626262;
+    
+    }
+    nav{
+        width:35%;
+    }
+    .title-container div {
+        width: 100%;
+        line-height: 1;
+    }
+
+    .title-container button {
+        margin: 2%; 
+    }
+    .artists-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        line-height: 1;
+    }
+
+    .artist {
+       width: 90%;
+    }
+    .artists-container img{
+        width: 35rem;
+        height: 25rem;
+    }
+    .bio {
+        height: 25rem;
+        margin: 4% 0 0 0;
+    }
+
+
 }
